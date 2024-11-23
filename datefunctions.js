@@ -27,9 +27,53 @@ console.log(d.toLocaleTimeString())
 
 
 
+console.log(Math.round(4.6))
+console.log(Math.round(4.49))
+
+console.log(Math.floor(423.59))
+console.log(Math.floor(-4.49))
+console.log(Math.floor(-2.7))
 
 
+console.log(Math.ceil(4.1))
+console.log(Math.ceil(-0.18))
+console.log(Math.ceil(1.3))
 
+console.log(Math.max(1,2,3,0,-9,0))
+console.log(Math.min(1,2,3,0,-9,0))
+
+console.log(Math.abs(-7))
+console.log(Math.abs(6))
+
+console.log(Math.sqrt(169))
+console.log(Math.pow(5,2))
+
+let t="bunny"
+function f(){
+    // console.log("hii+${how are you+all")
+    console.log(`hii how are you  ${t}`)
+}
+f()
+
+
+function alaramRing(){
+    let prsntTime= new Date()
+    let alarmTime= new Date()
+    alarmTime.setHours(16)
+    alarmTime.setMinutes(20)
+    alarmTime.setSeconds(0)
+
+    let timDiff=alarmTime-prsntTime
+    console.log(timDiff)
+
+    setTimeout(()=>{
+        alert("your alaram is ringing ")
+    },timDiff)
+
+    console.log("your alaram will ring at 8:20")
+
+}
+alaramRing()
 
 
 
